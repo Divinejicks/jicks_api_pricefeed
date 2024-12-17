@@ -35,7 +35,7 @@ const GetValueOfUSDCToUSD = async () => {
         const decimals = await priceFeed.decimals();
 
         const usdValueOfOneUSDC = Number(
-            (latestRoundData.answer.toString() / Math.pow(10, decimals)).toFixed(3)
+            (latestRoundData.answer.toString() / Math.pow(10, decimals))
         );
 
         return usdValueOfOneUSDC;

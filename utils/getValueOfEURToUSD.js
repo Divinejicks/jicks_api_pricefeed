@@ -35,7 +35,7 @@ const GetValueOfEURToUSD = async () => {
         const decimals = await priceFeed.decimals();
 
         const usdValueOfOneEUR = Number(
-            (latestRoundData.answer.toString() / Math.pow(10, decimals)).toFixed(4)
+            (latestRoundData.answer.toString() / Math.pow(10, decimals))
         );
 
         return usdValueOfOneEUR;
